@@ -1,0 +1,16 @@
+Godot Engine v3.2.1.stable.custom_build - https://godotengine.org
+OpenGL ES 3.0 Renderer: NV117
+ 
+**ERROR**: Node not found: ../Position2D.
+   At: scene/main/node.cpp:1381:get_node() - Condition "!node" is true. Returned: __null
+**ERROR**: Node not found: ../../Sprite/Position2D.
+   At: scene/main/node.cpp:1381:get_node() - Condition "!node" is true. Returned: __null
+**ERROR**: Failed to get modified time for: res://res:/.
+   At: drivers/unix/file_access_unix.cpp:321:_get_modified_time() - Method failed. Returning: 0
+**ERROR**: Failed to get modified time for: res://res:/.
+   At: drivers/unix/file_access_unix.cpp:321:_get_modified_time() - Method failed. Returning: 0
+**ERROR**: Failed to get modified time for: res://res:/.
+   At: drivers/unix/file_access_unix.cpp:321:_get_modified_time() - Method failed. Returning: 0
+**ERROR**: Failed to get modified time for: res://res:/.
+   At: drivers/unix/file_access_unix.cpp:321:_get_modified_time() - Method failed. Returning: 0
+Refreshing plugin: curve

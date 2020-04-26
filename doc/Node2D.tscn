@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://addons/curve/target.gd" type="Script" id=1]
+[ext_resource path="res://test/Player.gd" type="Script" id=2]
+[ext_resource path="res://test/godot.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 0, -48, -223, -250, 0, 0, 446.504, -153.951 )
+}
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_editor_description_": "ceci est une scene de test, "
+}
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 73.496, 321.951 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="Player"]
+position = Vector2( 0, -48 )
+
+[node name="Target" type="Path2D" parent="Player"]
+position = Vector2( -3, 6 )
+curve = SubResource( 2 )
+script = ExtResource( 1 )
+pathColour = Color( 1, 1, 0, 1 )
+width = 1.0
+_in = Vector2( -223, -250 )
+_out = Vector2( 0, 0 )
+path_start = NodePath("../Position2D")
+path_end = NodePath("../../Sprite/Position2D")
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.772549, 0.113725, 0.113725, 1 )
+position = Vector2( 520, 216 )
+texture = ExtResource( 3 )
+
+[node name="Position2D" type="Position2D" parent="Sprite"]
+position = Vector2( 0, -48 )

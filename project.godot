@@ -15,8 +15,17 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot-curve"
+config/name="Custom node Target"
+run/main_scene="res://test/Node2D.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "curve" )
+
+[logging]
+
+file_logging/log_path="res://log.txt"
 
 [rendering]
 
