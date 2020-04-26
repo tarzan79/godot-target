@@ -1,6 +1,6 @@
 un custom node qui permet d'afficher une ligne de cible entre 2 noeuds (inspiré de final fantasy 12)
 
-![ff12 exemple](/test/target-exemple.gif)
+![ff12 exemple](/doc/target-exemple.gif)
 
 les curves ayant une position relative, le custom node doit absolument être enfant du noeud de départ, pour le noeud d'arrivé, cela n'a pas d'importance
 
